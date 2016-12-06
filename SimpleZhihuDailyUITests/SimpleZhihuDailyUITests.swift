@@ -9,7 +9,7 @@
 import XCTest
 
 class SimpleZhihuDailyUITests: XCTestCase {
-        
+       
     override func setUp() {
         super.setUp()
         
