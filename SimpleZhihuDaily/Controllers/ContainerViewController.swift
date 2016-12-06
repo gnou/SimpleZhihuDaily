@@ -1,32 +1,32 @@
 //
-//  StoryListViewController.swift
+//  ContainerViewController.swift
 //  SimpleZhihuDaily
 //
-//  Created by CuiMingyu on 1/1/16.
+//  Created by Mingyu Cui on 06/12/2016.
 //  Copyright © 2016 CuiMingyu. All rights reserved.
 //
 
 import UIKit
 
-class StoryListViewController: UIViewController {
+class ContainerViewController: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-    
-    func configureTableView() {
-//        tableView
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
+    
 
     /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }

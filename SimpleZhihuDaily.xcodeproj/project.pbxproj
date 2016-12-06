@@ -7,25 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18A165E61C36510700F8736A /* StoryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A165E51C36510700F8736A /* StoryListViewController.swift */; };
+		189EE4451DF6BC6B00F69F84 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189EE4401DF6BC6B00F69F84 /* Alamofire.framework */; };
+		189EE4461DF6BC6B00F69F84 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189EE4411DF6BC6B00F69F84 /* Kingfisher.framework */; };
+		189EE4471DF6BC6B00F69F84 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189EE4421DF6BC6B00F69F84 /* Realm.framework */; };
+		189EE4481DF6BC6B00F69F84 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189EE4431DF6BC6B00F69F84 /* RealmSwift.framework */; };
+		189EE4491DF6BC6B00F69F84 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189EE4441DF6BC6B00F69F84 /* SwiftyJSON.framework */; };
+		189EE44F1DF6BD2C00F69F84 /* Alamofire.framework.dSYM in Copy Files For Carthage */ = {isa = PBXBuildFile; fileRef = 189EE44A1DF6BD2C00F69F84 /* Alamofire.framework.dSYM */; };
+		189EE4501DF6BD2C00F69F84 /* Kingfisher.framework.dSYM in Copy Files For Carthage */ = {isa = PBXBuildFile; fileRef = 189EE44B1DF6BD2C00F69F84 /* Kingfisher.framework.dSYM */; };
+		189EE4511DF6BD2C00F69F84 /* Realm.framework.dSYM in Copy Files For Carthage */ = {isa = PBXBuildFile; fileRef = 189EE44C1DF6BD2C00F69F84 /* Realm.framework.dSYM */; };
+		189EE4521DF6BD2C00F69F84 /* RealmSwift.framework.dSYM in Copy Files For Carthage */ = {isa = PBXBuildFile; fileRef = 189EE44D1DF6BD2C00F69F84 /* RealmSwift.framework.dSYM */; };
+		189EE4531DF6BD2C00F69F84 /* SwiftyJSON.framework.dSYM in Copy Files For Carthage */ = {isa = PBXBuildFile; fileRef = 189EE44E1DF6BD2C00F69F84 /* SwiftyJSON.framework.dSYM */; };
+		189EE4581DF6BE3E00F69F84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189EE4571DF6BE3E00F69F84 /* Main.storyboard */; };
+		189EE45A1DF6BF4500F69F84 /* StoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE4591DF6BF4500F69F84 /* StoriesTableViewController.swift */; };
+		189EE45C1DF6BF6F00F69F84 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE45B1DF6BF6F00F69F84 /* ContentViewController.swift */; };
+		189EE45E1DF6BF8A00F69F84 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE45D1DF6BF8A00F69F84 /* ContainerViewController.swift */; };
 		18A165E81C3655A800F8736A /* ResponseJSONObjectSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A165E71C3655A800F8736A /* ResponseJSONObjectSerializable.swift */; };
 		18A165EA1C3655CF00F8736A /* AlamofireRequest+JSONSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A165E91C3655CF00F8736A /* AlamofireRequest+JSONSerializable.swift */; };
 		18A165EC1C365C6800F8736A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A165EB1C365C6800F8736A /* Router.swift */; };
-		18A46BBF1C361C760027AEED /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A46BBC1C361C760027AEED /* Alamofire.framework */; };
-		18A46BC01C361C760027AEED /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A46BBD1C361C760027AEED /* Kingfisher.framework */; };
-		18A46BC11C361C760027AEED /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A46BBE1C361C760027AEED /* SwiftyJSON.framework */; };
-		18A46BC71C361D020027AEED /* Alamofire.framework.dSYM in Copy Files For Carthage */ = {isa = PBXBuildFile; fileRef = 18A46BC41C361D020027AEED /* Alamofire.framework.dSYM */; };
-		18A46BC81C361D020027AEED /* Kingfisher.framework.dSYM in Copy Files For Carthage */ = {isa = PBXBuildFile; fileRef = 18A46BC51C361D020027AEED /* Kingfisher.framework.dSYM */; };
-		18A46BC91C361D020027AEED /* SwiftyJSON.framework.dSYM in Copy Files For Carthage */ = {isa = PBXBuildFile; fileRef = 18A46BC61C361D020027AEED /* SwiftyJSON.framework.dSYM */; };
-		18A46BCD1C3623030027AEED /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A46BCB1C3623030027AEED /* Realm.framework */; };
-		18A46BCE1C3623030027AEED /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18A46BCB1C3623030027AEED /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		18A46BCF1C3623030027AEED /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18A46BCC1C3623030027AEED /* RealmSwift.framework */; };
-		18A46BD01C3623030027AEED /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18A46BCC1C3623030027AEED /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		18A46BD41C3623AA0027AEED /* Realm.framework.dSYM in Copy Files For Carthage */ = {isa = PBXBuildFile; fileRef = 18A46BD21C3623AA0027AEED /* Realm.framework.dSYM */; };
-		18A46BD51C3623AA0027AEED /* RealmSwift.framework.dSYM in Copy Files For Carthage */ = {isa = PBXBuildFile; fileRef = 18A46BD31C3623AA0027AEED /* RealmSwift.framework.dSYM */; };
 		18A84A211C36166E00F8905A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A84A201C36166E00F8905A /* AppDelegate.swift */; };
-		18A84A261C36166E00F8905A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A84A241C36166E00F8905A /* Main.storyboard */; };
-		18A84A291C36166E00F8905A /* SimpleZhihuDaily.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18A84A271C36166E00F8905A /* SimpleZhihuDaily.xcdatamodeld */; };
 		18A84A2B1C36166E00F8905A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A84A2A1C36166E00F8905A /* Assets.xcassets */; };
 		18A84A2E1C36166E00F8905A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A84A2C1C36166E00F8905A /* LaunchScreen.storyboard */; };
 		18A84A391C36166E00F8905A /* SimpleZhihuDailyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A84A381C36166E00F8905A /* SimpleZhihuDailyTests.swift */; };
@@ -56,48 +55,37 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				18A46BC71C361D020027AEED /* Alamofire.framework.dSYM in Copy Files For Carthage */,
-				18A46BC81C361D020027AEED /* Kingfisher.framework.dSYM in Copy Files For Carthage */,
-				18A46BC91C361D020027AEED /* SwiftyJSON.framework.dSYM in Copy Files For Carthage */,
-				18A46BD41C3623AA0027AEED /* Realm.framework.dSYM in Copy Files For Carthage */,
-				18A46BD51C3623AA0027AEED /* RealmSwift.framework.dSYM in Copy Files For Carthage */,
+				189EE44F1DF6BD2C00F69F84 /* Alamofire.framework.dSYM in Copy Files For Carthage */,
+				189EE4501DF6BD2C00F69F84 /* Kingfisher.framework.dSYM in Copy Files For Carthage */,
+				189EE4511DF6BD2C00F69F84 /* Realm.framework.dSYM in Copy Files For Carthage */,
+				189EE4521DF6BD2C00F69F84 /* RealmSwift.framework.dSYM in Copy Files For Carthage */,
+				189EE4531DF6BD2C00F69F84 /* SwiftyJSON.framework.dSYM in Copy Files For Carthage */,
 			);
 			name = "Copy Files For Carthage";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		18A46BD11C3623030027AEED /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				18A46BD01C3623030027AEED /* RealmSwift.framework in Embed Frameworks */,
-				18A46BCE1C3623030027AEED /* Realm.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		18A165E51C36510700F8736A /* StoryListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryListViewController.swift; sourceTree = "<group>"; };
+		189EE4401DF6BC6B00F69F84 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		189EE4411DF6BC6B00F69F84 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		189EE4421DF6BC6B00F69F84 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
+		189EE4431DF6BC6B00F69F84 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		189EE4441DF6BC6B00F69F84 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		189EE44A1DF6BD2C00F69F84 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		189EE44B1DF6BD2C00F69F84 /* Kingfisher.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Kingfisher.framework.dSYM; path = Carthage/Build/iOS/Kingfisher.framework.dSYM; sourceTree = "<group>"; };
+		189EE44C1DF6BD2C00F69F84 /* Realm.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Realm.framework.dSYM; path = Carthage/Build/iOS/Realm.framework.dSYM; sourceTree = "<group>"; };
+		189EE44D1DF6BD2C00F69F84 /* RealmSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RealmSwift.framework.dSYM; path = Carthage/Build/iOS/RealmSwift.framework.dSYM; sourceTree = "<group>"; };
+		189EE44E1DF6BD2C00F69F84 /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftyJSON.framework.dSYM; path = Carthage/Build/iOS/SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
+		189EE4571DF6BE3E00F69F84 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		189EE4591DF6BF4500F69F84 /* StoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesTableViewController.swift; sourceTree = "<group>"; };
+		189EE45B1DF6BF6F00F69F84 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		189EE45D1DF6BF8A00F69F84 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		18A165E71C3655A800F8736A /* ResponseJSONObjectSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseJSONObjectSerializable.swift; sourceTree = "<group>"; };
 		18A165E91C3655CF00F8736A /* AlamofireRequest+JSONSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlamofireRequest+JSONSerializable.swift"; sourceTree = "<group>"; };
 		18A165EB1C365C6800F8736A /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		18A46BBC1C361C760027AEED /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		18A46BBD1C361C760027AEED /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
-		18A46BBE1C361C760027AEED /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
-		18A46BC41C361D020027AEED /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/iOS/Alamofire.framework.dSYM; sourceTree = "<group>"; };
-		18A46BC51C361D020027AEED /* Kingfisher.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Kingfisher.framework.dSYM; path = Carthage/Build/iOS/Kingfisher.framework.dSYM; sourceTree = "<group>"; };
-		18A46BC61C361D020027AEED /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftyJSON.framework.dSYM; path = Carthage/Build/iOS/SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
-		18A46BCB1C3623030027AEED /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
-		18A46BCC1C3623030027AEED /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
-		18A46BD21C3623AA0027AEED /* Realm.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Realm.framework.dSYM; path = Carthage/Build/iOS/Realm.framework.dSYM; sourceTree = "<group>"; };
-		18A46BD31C3623AA0027AEED /* RealmSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = RealmSwift.framework.dSYM; path = Carthage/Build/iOS/RealmSwift.framework.dSYM; sourceTree = "<group>"; };
 		18A84A1D1C36166E00F8905A /* SimpleZhihuDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleZhihuDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A84A201C36166E00F8905A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18A84A251C36166E00F8905A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18A84A281C36166E00F8905A /* SimpleZhihuDaily.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleZhihuDaily.xcdatamodel; sourceTree = "<group>"; };
 		18A84A2A1C36166E00F8905A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18A84A2D1C36166E00F8905A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18A84A2F1C36166E00F8905A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,11 +102,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18A46BCD1C3623030027AEED /* Realm.framework in Frameworks */,
-				18A46BCF1C3623030027AEED /* RealmSwift.framework in Frameworks */,
-				18A46BBF1C361C760027AEED /* Alamofire.framework in Frameworks */,
-				18A46BC01C361C760027AEED /* Kingfisher.framework in Frameworks */,
-				18A46BC11C361C760027AEED /* SwiftyJSON.framework in Frameworks */,
+				189EE4451DF6BC6B00F69F84 /* Alamofire.framework in Frameworks */,
+				189EE4461DF6BC6B00F69F84 /* Kingfisher.framework in Frameworks */,
+				189EE4471DF6BC6B00F69F84 /* Realm.framework in Frameworks */,
+				189EE4481DF6BC6B00F69F84 /* RealmSwift.framework in Frameworks */,
+				189EE4491DF6BC6B00F69F84 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,35 +127,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		189EE43F1DF6BC6B00F69F84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				189EE4401DF6BC6B00F69F84 /* Alamofire.framework */,
+				189EE4411DF6BC6B00F69F84 /* Kingfisher.framework */,
+				189EE4421DF6BC6B00F69F84 /* Realm.framework */,
+				189EE4431DF6BC6B00F69F84 /* RealmSwift.framework */,
+				189EE4441DF6BC6B00F69F84 /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		189EE4541DF6BD3500F69F84 /* Carghage */ = {
+			isa = PBXGroup;
+			children = (
+				189EE44A1DF6BD2C00F69F84 /* Alamofire.framework.dSYM */,
+				189EE44B1DF6BD2C00F69F84 /* Kingfisher.framework.dSYM */,
+				189EE44C1DF6BD2C00F69F84 /* Realm.framework.dSYM */,
+				189EE44D1DF6BD2C00F69F84 /* RealmSwift.framework.dSYM */,
+				189EE44E1DF6BD2C00F69F84 /* SwiftyJSON.framework.dSYM */,
+			);
+			name = Carghage;
+			sourceTree = "<group>";
+		};
 		18A165E41C362C0B00F8736A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				18A84A271C36166E00F8905A /* SimpleZhihuDaily.xcdatamodeld */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		18A46BCA1C361D140027AEED /* Carthage */ = {
-			isa = PBXGroup;
-			children = (
-				18A46BC41C361D020027AEED /* Alamofire.framework.dSYM */,
-				18A46BC51C361D020027AEED /* Kingfisher.framework.dSYM */,
-				18A46BD21C3623AA0027AEED /* Realm.framework.dSYM */,
-				18A46BD31C3623AA0027AEED /* RealmSwift.framework.dSYM */,
-				18A46BC61C361D020027AEED /* SwiftyJSON.framework.dSYM */,
-				18A46BBC1C361C760027AEED /* Alamofire.framework */,
-				18A46BBD1C361C760027AEED /* Kingfisher.framework */,
-				18A46BCB1C3623030027AEED /* Realm.framework */,
-				18A46BCC1C3623030027AEED /* RealmSwift.framework */,
-				18A46BBE1C361C760027AEED /* SwiftyJSON.framework */,
-			);
-			name = Carthage;
 			sourceTree = "<group>";
 		};
 		18A84A141C36166D00F8905A = {
 			isa = PBXGroup;
 			children = (
-				18A46BCA1C361D140027AEED /* Carthage */,
+				189EE4541DF6BD3500F69F84 /* Carghage */,
+				189EE43F1DF6BC6B00F69F84 /* Frameworks */,
 				18A84A1F1C36166E00F8905A /* SimpleZhihuDaily */,
 				18A84A371C36166E00F8905A /* SimpleZhihuDailyTests */,
 				18A84A421C36166E00F8905A /* SimpleZhihuDailyUITests */,
@@ -221,7 +216,9 @@
 		330EA3521400AB3A7EFDB485 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				18A165E51C36510700F8736A /* StoryListViewController.swift */,
+				189EE4591DF6BF4500F69F84 /* StoriesTableViewController.swift */,
+				189EE45B1DF6BF6F00F69F84 /* ContentViewController.swift */,
+				189EE45D1DF6BF8A00F69F84 /* ContainerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -239,7 +236,7 @@
 		330EABC704C6DE0A234B6E86 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				18A84A241C36166E00F8905A /* Main.storyboard */,
+				189EE4571DF6BE3E00F69F84 /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,7 +253,6 @@
 				18A84A1B1C36166D00F8905A /* Resources */,
 				18A46BC21C361C980027AEED /* Run Script For Carthage */,
 				18A46BC31C361CEF0027AEED /* Copy Files For Carthage */,
-				18A46BD11C3623030027AEED /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -310,18 +306,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = CuiMingyu;
 				TargetAttributes = {
 					18A84A1C1C36166D00F8905A = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = S93SS7F2CT;
+						LastSwiftMigration = 0810;
 					};
 					18A84A331C36166E00F8905A = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = S93SS7F2CT;
+						LastSwiftMigration = 0810;
 						TestTargetID = 18A84A1C1C36166D00F8905A;
 					};
 					18A84A3E1C36166E00F8905A = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = S93SS7F2CT;
+						LastSwiftMigration = 0810;
 						TestTargetID = 18A84A1C1C36166D00F8905A;
 					};
 				};
@@ -351,9 +353,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189EE4581DF6BE3E00F69F84 /* Main.storyboard in Resources */,
 				18A84A2E1C36166E00F8905A /* LaunchScreen.storyboard in Resources */,
 				18A84A2B1C36166E00F8905A /* Assets.xcassets in Resources */,
-				18A84A261C36166E00F8905A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,11 +403,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				18A84A211C36166E00F8905A /* AppDelegate.swift in Sources */,
-				18A165E61C36510700F8736A /* StoryListViewController.swift in Sources */,
 				18A165E81C3655A800F8736A /* ResponseJSONObjectSerializable.swift in Sources */,
+				189EE45E1DF6BF8A00F69F84 /* ContainerViewController.swift in Sources */,
+				189EE45A1DF6BF4500F69F84 /* StoriesTableViewController.swift in Sources */,
 				18A165EA1C3655CF00F8736A /* AlamofireRequest+JSONSerializable.swift in Sources */,
+				189EE45C1DF6BF6F00F69F84 /* ContentViewController.swift in Sources */,
 				18A165EC1C365C6800F8736A /* Router.swift in Sources */,
-				18A84A291C36166E00F8905A /* SimpleZhihuDaily.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,15 +444,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		18A84A241C36166E00F8905A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				18A84A251C36166E00F8905A /* Base */,
-			);
-			name = Main.storyboard;
-			path = ..;
-			sourceTree = "<group>";
-		};
 		18A84A2C1C36166E00F8905A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -474,8 +468,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -519,8 +515,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -539,6 +537,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -548,6 +547,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S93SS7F2CT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -556,6 +556,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.gnou.SimpleZhihuDaily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -563,6 +564,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S93SS7F2CT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
@@ -571,6 +573,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.gnou.SimpleZhihuDaily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -578,10 +581,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = S93SS7F2CT;
 				INFOPLIST_FILE = SimpleZhihuDailyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.gnou.SimpleZhihuDailyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleZhihuDaily.app/SimpleZhihuDaily";
 			};
 			name = Debug;
@@ -590,10 +595,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = S93SS7F2CT;
 				INFOPLIST_FILE = SimpleZhihuDailyTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.gnou.SimpleZhihuDailyTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleZhihuDaily.app/SimpleZhihuDaily";
 			};
 			name = Release;
@@ -601,10 +608,12 @@
 		18A84A4F1C36166E00F8905A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = S93SS7F2CT;
 				INFOPLIST_FILE = SimpleZhihuDailyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.gnou.SimpleZhihuDailyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SimpleZhihuDaily;
 				USES_XCTRUNNER = YES;
 			};
@@ -613,10 +622,12 @@
 		18A84A501C36166E00F8905A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = S93SS7F2CT;
 				INFOPLIST_FILE = SimpleZhihuDailyUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.gnou.SimpleZhihuDailyUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SimpleZhihuDaily;
 				USES_XCTRUNNER = YES;
 			};
@@ -662,19 +673,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		18A84A271C36166E00F8905A /* SimpleZhihuDaily.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				18A84A281C36166E00F8905A /* SimpleZhihuDaily.xcdatamodel */,
-			);
-			currentVersion = 18A84A281C36166E00F8905A /* SimpleZhihuDaily.xcdatamodel */;
-			path = SimpleZhihuDaily.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 18A84A151C36166D00F8905A /* Project object */;
 }

@@ -1,4 +1,4 @@
-github "Alamofire/Alamofire" ~> 3.0
+github "Alamofire/Alamofire"
 github "SwiftyJSON/SwiftyJSON"
-github "onevcat/Kingfisher" ~> 1.9
+github "onevcat/Kingfisher"
 github "realm/realm-cocoa"
