@@ -9,47 +9,65 @@
 import Foundation
 import Alamofire
 
-//enum SRRouter: URLRequestConvertible {
-//    static let baseURLString = "http://news-at.zhihu.com/api/4"
-//    
-//    case latestStoryList
-//    case storyListForDay(dayString: String)
-//    case story(id: Int)
-//    
-//    var URLRequest: NSMutableURLRequest {
-//        var method: Alamofire.Method {
-//            switch self {
-//            default:
-//                return .GET
-//            }
-//        }
-//        let result: (path: String, parameters: [String: AnyObject]?) = {
-//            switch self {
-//            case .latestStoryList:
-//                return ("news/latest", nil)
-//            case .story(let id):
-//                return ("news/\(id)", nil)
-//            case .storyListForDay(let dayString):
-//                return ("news/before/\(dayString)", nil)
-//            }
-//        }()
-//        
-//        let URL = Foundation.URL(string: Router.baseURLString)!
-//        let URLRequest = NSMutableURLRequest(url: URL.appendingPathComponent(result.path))
-//        
-//        let encoding: ParameterEncoding = {
-//            switch method {
-//            case .GET, .HEAD, .DELETE:
-//                return ParameterEncoding.URL
-//            case .POST, .PUT:
-//                return ParameterEncoding.JSON
-//            default:
-//                return ParameterEncoding.JSON
-//            }
-//        }()
-//        
-//        let encodingRequest = encoding.encode(URLRequest as! URLRequestConvertible, with: result.parameters).0
-//        encodingRequest.HTTPMethod = method.rawValue
-//        return encodingRequest
-//    }
-//}
+enum SRRouter: URLRequestConvertible {
+    static let baseURLString = "http://news-at.zhihu.com/api/4"
+    
+    struct Formatter {
+        static let Formatter: DateFormatter = {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyyMMdd"
+            return formatter
+        }()
+    }
+    
+    case latest
+    case someday(Date)
+    case content(Int)
+    case extraData(Int)
+    case longComments(Int)
+    case shortComments(Int)
+    
+    func asURLRequest() throws -> URLRequest {
+        
+        var method: HTTPMethod {
+            switch self {
+            case .latest, .someday, .content, .extraData, .longComments, .shortComments:
+                return .get
+            }
+        }
+        
+        let url: URL = {
+            let relativePath: String?
+            
+            switch self {
+            case .latest:
+                relativePath = "/news/latest"
+            case .someday(let date):
+                let dayString = Formatter.Formatter.string(from: date)
+                relativePath = "/news/before/\(dayString)"
+            case .content(let id):
+                relativePath = "/news/\(id)"
+            case .extraData(let id):
+                relativePath = "/story-extra/\(id)"
+            case .longComments(let id):
+                relativePath = "/story/\(id)/long-comments"
+            case .shortComments(let id):
+                relativePath = "/story/\(id)/short-comments"
+            }
+            
+            var url = URL(string: SRRouter.baseURLString)
+            
+            if let _relativePath = relativePath {
+                url?.appendPathComponent(_relativePath)
+            }
+ 
+            return url!
+        }()
+        
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = method.rawValue
+        
+        let encoding = JSONEncoding.default
+        return try encoding.encode(urlRequest)
+    }
+}
