@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18764FAE1E70425D0048A624 /* SRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18764FAD1E70425D0048A624 /* SRError.swift */; };
 		189EE4451DF6BC6B00F69F84 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189EE4401DF6BC6B00F69F84 /* Alamofire.framework */; };
 		189EE4461DF6BC6B00F69F84 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189EE4411DF6BC6B00F69F84 /* Kingfisher.framework */; };
 		189EE4471DF6BC6B00F69F84 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189EE4421DF6BC6B00F69F84 /* Realm.framework */; };
@@ -68,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18764FAD1E70425D0048A624 /* SRError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRError.swift; sourceTree = "<group>"; };
 		189EE4401DF6BC6B00F69F84 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		189EE4411DF6BC6B00F69F84 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		189EE4421DF6BC6B00F69F84 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				18F728F31E6DA0C70061FDD2 /* Entry.swift */,
+				18764FAD1E70425D0048A624 /* SRError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 				18A84A211C36166E00F8905A /* AppDelegate.swift in Sources */,
 				18A165E81C3655A800F8736A /* ResponseJSONObjectSerializable.swift in Sources */,
 				189EE45E1DF6BF8A00F69F84 /* ContainerViewController.swift in Sources */,
+				18764FAE1E70425D0048A624 /* SRError.swift in Sources */,
 				189EE45A1DF6BF4500F69F84 /* StoriesTableViewController.swift in Sources */,
 				18A165EA1C3655CF00F8736A /* AlamofireRequest+JSONSerializable.swift in Sources */,
 				189EE45C1DF6BF6F00F69F84 /* ContentViewController.swift in Sources */,
