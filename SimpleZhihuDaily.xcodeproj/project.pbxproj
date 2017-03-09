@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		18764FAE1E70425D0048A624 /* SRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18764FAD1E70425D0048A624 /* SRError.swift */; };
+		188774291E7195CE00D86BE7 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188774281E7195CE00D86BE7 /* CacheManager.swift */; };
 		189EE4451DF6BC6B00F69F84 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189EE4401DF6BC6B00F69F84 /* Alamofire.framework */; };
 		189EE4461DF6BC6B00F69F84 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189EE4411DF6BC6B00F69F84 /* Kingfisher.framework */; };
 		189EE4471DF6BC6B00F69F84 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 189EE4421DF6BC6B00F69F84 /* Realm.framework */; };
@@ -70,6 +71,7 @@
 
 /* Begin PBXFileReference section */
 		18764FAD1E70425D0048A624 /* SRError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRError.swift; sourceTree = "<group>"; };
+		188774281E7195CE00D86BE7 /* CacheManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		189EE4401DF6BC6B00F69F84 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		189EE4411DF6BC6B00F69F84 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		189EE4421DF6BC6B00F69F84 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
@@ -131,6 +133,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		188774271E7195AB00D86BE7 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				188774281E7195CE00D86BE7 /* CacheManager.swift */,
+			);
+			path = Cache;
+			sourceTree = "<group>";
+		};
 		189EE43F1DF6BC6B00F69F84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +199,7 @@
 		18A84A1F1C36166E00F8905A /* SimpleZhihuDaily */ = {
 			isa = PBXGroup;
 			children = (
+				188774271E7195AB00D86BE7 /* Cache */,
 				330EA37217EE8C02A80286B5 /* Apis */,
 				18A165E41C362C0B00F8736A /* Models */,
 				330EABC704C6DE0A234B6E86 /* Views */,
@@ -414,6 +425,7 @@
 				189EE45E1DF6BF8A00F69F84 /* ContainerViewController.swift in Sources */,
 				18764FAE1E70425D0048A624 /* SRError.swift in Sources */,
 				189EE45A1DF6BF4500F69F84 /* StoriesTableViewController.swift in Sources */,
+				188774291E7195CE00D86BE7 /* CacheManager.swift in Sources */,
 				18A165EA1C3655CF00F8736A /* AlamofireRequest+JSONSerializable.swift in Sources */,
 				189EE45C1DF6BF6F00F69F84 /* ContentViewController.swift in Sources */,
 				18A165EC1C365C6800F8736A /* Router.swift in Sources */,
