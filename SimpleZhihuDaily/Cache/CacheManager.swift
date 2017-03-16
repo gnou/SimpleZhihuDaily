@@ -13,4 +13,8 @@ class CacheManager {
     static let shared = CacheManager()
     
     
+    func storyListOfDate(_ date: Date, handler: @escaping (Result<[Entry]>) -> Void) {
+        
+        
+    }
 }

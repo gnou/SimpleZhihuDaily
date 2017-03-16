@@ -7,17 +7,25 @@
 //
 
 import UIKit
+import Alamofire
 
 class StoriesTableViewController: UITableViewController {
 
+    var stories = [Entry]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+//        Alamofire.request(SRRouter.latest).responseCollection { (response: DataResponse<[Entry]>) in
+//            switch response.result {
+//            case .success(let stories):
+//                self.stories = stories
+//            case .failure(let error):
+//                let alertController = UIAlertController(title: "Error", message: "Failed to fetch latest stories", preferredStyle: .alert)
+//                alertController.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK"), style: .cancel, handler: nil))
+//                present(alertController, animated: true, completion: nil)
+//            }
+//        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,11 +34,6 @@ class StoriesTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows

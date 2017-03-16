@@ -21,8 +21,6 @@
 		189EE4531DF6BD2C00F69F84 /* SwiftyJSON.framework.dSYM in Copy Files For Carthage */ = {isa = PBXBuildFile; fileRef = 189EE44E1DF6BD2C00F69F84 /* SwiftyJSON.framework.dSYM */; };
 		189EE4581DF6BE3E00F69F84 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189EE4571DF6BE3E00F69F84 /* Main.storyboard */; };
 		189EE45A1DF6BF4500F69F84 /* StoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE4591DF6BF4500F69F84 /* StoriesTableViewController.swift */; };
-		189EE45C1DF6BF6F00F69F84 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE45B1DF6BF6F00F69F84 /* ContentViewController.swift */; };
-		189EE45E1DF6BF8A00F69F84 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE45D1DF6BF8A00F69F84 /* ContainerViewController.swift */; };
 		18A165E81C3655A800F8736A /* ResponseJSONObjectSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A165E71C3655A800F8736A /* ResponseJSONObjectSerializable.swift */; };
 		18A165EA1C3655CF00F8736A /* AlamofireRequest+JSONSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A165E91C3655CF00F8736A /* AlamofireRequest+JSONSerializable.swift */; };
 		18A165EC1C365C6800F8736A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A165EB1C365C6800F8736A /* Router.swift */; };
@@ -84,8 +82,6 @@
 		189EE44E1DF6BD2C00F69F84 /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftyJSON.framework.dSYM; path = Carthage/Build/iOS/SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
 		189EE4571DF6BE3E00F69F84 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		189EE4591DF6BF4500F69F84 /* StoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesTableViewController.swift; sourceTree = "<group>"; };
-		189EE45B1DF6BF6F00F69F84 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
-		189EE45D1DF6BF8A00F69F84 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
 		18A165E71C3655A800F8736A /* ResponseJSONObjectSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseJSONObjectSerializable.swift; sourceTree = "<group>"; };
 		18A165E91C3655CF00F8736A /* AlamofireRequest+JSONSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlamofireRequest+JSONSerializable.swift"; sourceTree = "<group>"; };
 		18A165EB1C365C6800F8736A /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -234,8 +230,6 @@
 			isa = PBXGroup;
 			children = (
 				189EE4591DF6BF4500F69F84 /* StoriesTableViewController.swift */,
-				189EE45B1DF6BF6F00F69F84 /* ContentViewController.swift */,
-				189EE45D1DF6BF8A00F69F84 /* ContainerViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -422,12 +416,10 @@
 				18F728F41E6DA0C70061FDD2 /* Entry.swift in Sources */,
 				18A84A211C36166E00F8905A /* AppDelegate.swift in Sources */,
 				18A165E81C3655A800F8736A /* ResponseJSONObjectSerializable.swift in Sources */,
-				189EE45E1DF6BF8A00F69F84 /* ContainerViewController.swift in Sources */,
 				18764FAE1E70425D0048A624 /* SRError.swift in Sources */,
 				189EE45A1DF6BF4500F69F84 /* StoriesTableViewController.swift in Sources */,
 				188774291E7195CE00D86BE7 /* CacheManager.swift in Sources */,
 				18A165EA1C3655CF00F8736A /* AlamofireRequest+JSONSerializable.swift in Sources */,
-				189EE45C1DF6BF6F00F69F84 /* ContentViewController.swift in Sources */,
 				18A165EC1C365C6800F8736A /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,6 +565,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = SimpleZhihuDaily/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.gnou.SimpleZhihuDaily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -590,6 +583,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = SimpleZhihuDaily/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.gnou.SimpleZhihuDaily;
 				PRODUCT_NAME = "$(TARGET_NAME)";
