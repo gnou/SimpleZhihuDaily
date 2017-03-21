@@ -8,15 +8,27 @@
 
 import UIKit
 import CoreData
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var mainRealm: Realm!
+    var backgroundRealm: Realm?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Init realm database
+        do {
+            try mainRealm = Realm()
+            print(mainRealm.configuration.fileURL)
+        } catch {
+            fatalError(error.localizedDescription)
+        }
+        
         return true
     }
 

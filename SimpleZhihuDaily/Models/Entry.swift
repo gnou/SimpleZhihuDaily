@@ -29,23 +29,3 @@ class Entry: Object {
     }
     
 }
-
-//extension Entry: ResponseJSONObjectSerializable {
-//    required convenience init?(json: JSON) {
-//        guard let id = json["id"].int,
-//            let title = json["title"].string else {
-//                return nil
-//        }
-//        
-//        self.id = id
-//        self.title = title
-//        self.image = json["images"].array?.first?.string ?? json["image"].string
-//        
-////        self.type = json["type"].int
-////        self.init()
-//    }
-
-//    required init(value: Any, schema: RLMSchema) {
-//        fatalError("init(value:schema:) has not been implemented")
-//    }
-//}

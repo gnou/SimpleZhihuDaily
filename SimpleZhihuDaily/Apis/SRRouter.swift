@@ -1,5 +1,5 @@
 //
-//  Router.swift
+//  SRRouter.swift
 //  SimpleZhihuDaily
 //
 //  Created by CuiMingyu on 1/1/16.
@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 
 enum SRRouter: URLRequestConvertible {
-    static let baseURLString = "http://news-at.zhihu.com/api/4"
+    static let baseURLString = "https://news-at.zhihu.com/api/4"
     
     struct Formatter {
         static let Formatter: DateFormatter = {

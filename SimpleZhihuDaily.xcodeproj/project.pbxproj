@@ -23,7 +23,7 @@
 		189EE45A1DF6BF4500F69F84 /* StoriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189EE4591DF6BF4500F69F84 /* StoriesTableViewController.swift */; };
 		18A165E81C3655A800F8736A /* ResponseJSONObjectSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A165E71C3655A800F8736A /* ResponseJSONObjectSerializable.swift */; };
 		18A165EA1C3655CF00F8736A /* AlamofireRequest+JSONSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A165E91C3655CF00F8736A /* AlamofireRequest+JSONSerializable.swift */; };
-		18A165EC1C365C6800F8736A /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A165EB1C365C6800F8736A /* Router.swift */; };
+		18A165EC1C365C6800F8736A /* SRRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A165EB1C365C6800F8736A /* SRRouter.swift */; };
 		18A84A211C36166E00F8905A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A84A201C36166E00F8905A /* AppDelegate.swift */; };
 		18A84A2B1C36166E00F8905A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A84A2A1C36166E00F8905A /* Assets.xcassets */; };
 		18A84A2E1C36166E00F8905A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A84A2C1C36166E00F8905A /* LaunchScreen.storyboard */; };
@@ -84,7 +84,7 @@
 		189EE4591DF6BF4500F69F84 /* StoriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesTableViewController.swift; sourceTree = "<group>"; };
 		18A165E71C3655A800F8736A /* ResponseJSONObjectSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseJSONObjectSerializable.swift; sourceTree = "<group>"; };
 		18A165E91C3655CF00F8736A /* AlamofireRequest+JSONSerializable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AlamofireRequest+JSONSerializable.swift"; sourceTree = "<group>"; };
-		18A165EB1C365C6800F8736A /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		18A165EB1C365C6800F8736A /* SRRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SRRouter.swift; sourceTree = "<group>"; };
 		18A84A1D1C36166E00F8905A /* SimpleZhihuDaily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleZhihuDaily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A84A201C36166E00F8905A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18A84A2A1C36166E00F8905A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -239,7 +239,7 @@
 			children = (
 				18A165E71C3655A800F8736A /* ResponseJSONObjectSerializable.swift */,
 				18A165E91C3655CF00F8736A /* AlamofireRequest+JSONSerializable.swift */,
-				18A165EB1C365C6800F8736A /* Router.swift */,
+				18A165EB1C365C6800F8736A /* SRRouter.swift */,
 			);
 			path = Apis;
 			sourceTree = "<group>";
@@ -420,7 +420,7 @@
 				189EE45A1DF6BF4500F69F84 /* StoriesTableViewController.swift in Sources */,
 				188774291E7195CE00D86BE7 /* CacheManager.swift in Sources */,
 				18A165EA1C3655CF00F8736A /* AlamofireRequest+JSONSerializable.swift in Sources */,
-				18A165EC1C365C6800F8736A /* Router.swift in Sources */,
+				18A165EC1C365C6800F8736A /* SRRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
