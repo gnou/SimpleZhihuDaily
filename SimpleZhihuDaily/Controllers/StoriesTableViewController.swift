@@ -17,16 +17,6 @@ class StoriesTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        Alamofire.request(SRRouter.latest).responseCollection { (response: DataResponse<[Entry]>) in
-//            switch response.result {
-//            case .success(let stories):
-//                self.stories = stories
-//            case .failure(let error):
-//                let alertController = UIAlertController(title: "Error", message: "Failed to fetch latest stories", preferredStyle: .alert)
-//                alertController.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "OK"), style: .cancel, handler: nil))
-//                present(alertController, animated: true, completion: nil)
-//            }
-//        }
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let cacheManager = CacheManager(realm: appDelegate.mainRealm)
         cacheManager.entriesOfDate(Date.init(timeIntervalSinceNow: -100000)) { [weak self] (result) in
@@ -45,7 +35,6 @@ class StoriesTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return entries.count
     }
 
@@ -54,6 +43,16 @@ class StoriesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TempEntryCell", for: indexPath)
         cell.textLabel?.text = entry.title
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            let entry = entries[indexPath.row]
+            
+            if let contentVC = segue.destination as? ContentViewController {
+                contentVC.id = entry.id
+            }
+        }
     }
 
 }

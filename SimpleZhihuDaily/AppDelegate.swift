@@ -24,7 +24,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Init realm database
         do {
             try mainRealm = Realm()
-            print(mainRealm.configuration.fileURL)
+            if let fileURLString = mainRealm.configuration.fileURL?.absoluteString {
+                print(fileURLString)
+            }
         } catch {
             fatalError(error.localizedDescription)
         }

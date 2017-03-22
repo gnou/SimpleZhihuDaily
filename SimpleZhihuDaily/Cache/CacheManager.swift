@@ -13,6 +13,8 @@ import SwiftyJSON
 
 class CacheManager {
     
+    let backgroundQueueLabel = "me.gnou.realmbg"
+    
     struct Formatter {
         static let Formatter: DateFormatter = {
             let formatter = DateFormatter()
@@ -34,7 +36,14 @@ class CacheManager {
             return
         }
         
-        Alamofire.request(SRRouter.someday(date)).validate().responseJSON { [unowned self] (response: DataResponse<Any>) in
+        let router: SRRouter
+        if Calendar.current.isDate(date, inSameDayAs: Date()) {
+            router = SRRouter.latest
+        } else {
+            router = SRRouter.someday(date)
+        }
+        
+        Alamofire.request(router).validate().responseJSON { [weak self] (response: DataResponse<Any>) in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
@@ -47,7 +56,6 @@ class CacheManager {
                         entry.title = title
                         entry.image = subJSON["images"].array?.first?.string
                         entry.date = resultDate
-                        
                         results.append(entry)
                     } else {
                         continue
@@ -55,9 +63,63 @@ class CacheManager {
                 }
                 
                 handler(.success(results))
+                
+                if let weakSelf = self {
+                    DispatchQueue(label: weakSelf.backgroundQueueLabel).async {
+                        autoreleasepool {
+                            do {
+                                let bgRealm = try Realm()
+                                bgRealm.beginWrite()
+                                for entry in results {
+                                    bgRealm.add(entry)
+                                }
+                                do {
+                                    try bgRealm.commitWrite()
+                                } catch {
+                                }
+                            } catch {
+                                
+                            }
+                        }
+                    }
+                    
+                }
                 return
             case .failure(let error):
                 handler(.failure(error))
+                return
+            }
+        }
+    }
+    
+    func story(_ id: Int, handler: @escaping (Result<Story>) -> Void) {
+        let stories = realm.objects(Story.self).filter("id = \(id)")
+        if let story = stories.first {
+            handler(.success(story))
+            return
+        }
+        
+        Alamofire.request(SRRouter.content(id)).responseJSON { [weak self] response in
+            switch response.result {
+            case .failure(let error):
+                handler(.failure(error))
+                return
+            case .success(let value):
+                let json = JSON(value)
+                let story = Story()
+                story.load(with: json)
+                
+                handler(.success(story))
+                if let weakSelf = self {
+                    do {
+                        try weakSelf.realm.write {
+                            weakSelf.realm.add(story)
+                        }
+                    } catch {
+                        
+                    }
+                }
+                
                 return
             }
         }
